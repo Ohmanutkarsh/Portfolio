@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Utkarsh Tapise — Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="scroll-progress"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+    <a href="#home" class="nav-logo">Utkarsh Tapise</a>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#testimonials">References</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    
+    <div style="display: flex; align-items: center; gap: 1rem;">
+        <button id="theme-toggle" class="theme-button" aria-label="Toggle dark mode">
+            <span id="theme-icon">🌙</span>
+        </button>
+        <div class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#skills" onclick="closeMobile()">Skills</a>
+    <a href="#projects" onclick="closeMobile()">Projects</a>
+    <a href="#certificates" onclick="closeMobile()">Certificates</a>
+    <a href="#achievements" onclick="closeMobile()">Achievements</a>
+    <a href="#testimonials" onclick="closeMobile()">References</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="home">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-inner">
+        <div class="hero-content">
+            <div class="hero-tag"><span class="dot"></span>FY CSE (Data Science) · MIT AOE</div>
+            <h1 class="hero-name">Utkarsh<br/><span class="line2">Tapise</span></h1>
+            <p class="hero-tagline">Aspiring Data Scientist &nbsp;·&nbsp; Tech Explorer &nbsp;·&nbsp; Problem Solver</p>
+            <p class="hero-bio">First-year CSE (Data Science) student at MIT Academy of Engineering. I love exploring new technologies, building things that matter, and solving real-world problems — one line of code at a time.</p>
+            <div class="hero-actions" style="align-items:center;">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <button onclick="openResumeModal()" class="btn btn-primary">Resume</button>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item"><span class="stat-num"><span class="counter" data-target="3">0</span><span class="suffix">+</span></span><span class="stat-label">Projects Built</span></div>
+                <div class="stat-item"><span class="stat-num"><span class="counter" data-target="5">0</span><span class="suffix">+</span></span><span class="stat-label">Certificates</span></div>
+                <div class="stat-item"><span class="stat-num"><span class="counter" data-target="1">0</span><span class="suffix">yr</span></span><span class="stat-label">Coding Journey</span></div>
+            </div>
+        </div>
+        <div class="hero-avatar">
+            <!-- Replaced Emoji with the provided photo -->
+            <img src="assets/profile.jpeg" alt="Utkarsh Tapise" class="avatar-image"/>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="container">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title">A bit about who I am</h2>
+        <div class="divider"></div>
+        <div class="about-grid">
+            <div class="about-bio reveal">
+                <p>Hey there! I'm Utkarsh — a curious and energetic first-year student who genuinely enjoys technology and what it can do for the world. I'm not just here to get a degree; I'm here to grow, build, and make a difference.</p>
+                <p>I believe in learning by doing. Whether it's a side project, a hackathon, or a random idea at midnight — I love diving in. I aim to be known not just for what I achieve, but for the person I am: honest, kind, and always willing to lend a hand.</p>
+                <p>Outside of coding, I keep things real, keep the energy high, and always bring a good vibe to the team. People describe me as chill but driven — pretty accurate.</p>
+                <div class="traits-grid">
+                    <div class="trait-chip"><span class="emoji">⚡</span> Energetic</div>
+                    <div class="trait-chip"><span class="emoji">😄</span> Chill & Fun</div>
+                    <div class="trait-chip"><span class="emoji">📚</span> Fast Learner</div>
+                    <div class="trait-chip"><span class="emoji">🎧</span> Good Listener</div>
+                    <div class="trait-chip"><span class="emoji">🔍</span> Curious Mind</div>
+                    <div class="trait-chip"><span class="emoji">🤝</span> Team Player</div>
+                </div>
+            </div>
+            <div class="timeline reveal">
+                <div class="timeline-item"><div class="timeline-year">2025 – Present</div><div class="timeline-school">MIT Academy of Engineering, Alandi</div><div class="timeline-detail">FY B.Tech CSE (Data Science)</div></div>
+                <div class="timeline-item"><div class="timeline-year">2023 – 2025</div><div class="timeline-school">MIT Jr. College, Pune</div><div class="timeline-detail">HSC — 75.33% (2025)</div></div>
+                <div class="timeline-item"><div class="timeline-year">2013 – 2023</div><div class="timeline-school">Pirangut English School</div><div class="timeline-detail">5th–10th — SSC 84.8% (2023)</div></div>
+                <div class="timeline-item"><div class="timeline-year">2009 – 2013</div><div class="timeline-school">Z.P. Primary School Shindewadi</div><div class="timeline-detail">1st–4th Std — Foundation years</div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <div class="container">
+        <div class="section-label">Skills</div>
+        <h2 class="section-title">What I work with</h2>
+        <p class="section-subtitle">A growing toolkit — always learning, always improving.</p>
+        <div class="skills-grid" id="skillsGrid"></div>
+        <p class="skills-note">✨ Continuously learning and improving every day</p>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <div class="container">
+        <div class="section-label">Projects</div>
+        <h2 class="section-title">Things I've built</h2>
+        <p class="section-subtitle">Small beginnings, big ideas. Each project taught me something new.</p>
+        <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+</section>
+
+<!-- ══════════ CERTIFICATES ══════════ -->
+<section id="certificates">
+    <div class="container">
+        <div class="section-label">Certificates</div>
+        <h2 class="section-title">My Credentials</h2>
+        <p class="section-subtitle">Courses, hackathons & certifications earned on my learning journey.</p>
+
+        <!-- Filter -->
+        <div class="cert-filter-bar">
+            <button class="cert-filter active" data-filter="all">All</button>
+            <button class="cert-filter" data-filter="cloud">Cloud</button>
+            <button class="cert-filter" data-filter="hackathon">Hackathon</button>
+            <button class="cert-filter" data-filter="python">Python</button>
+            <button class="cert-filter" data-filter="skills">Skills</button>
+        </div>
+
+        <div class="certs-grid" id="certsGrid"></div>
+
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+    <div class="container">
+        <div class="section-label">Achievements</div>
+        <h2 class="section-title">Milestones so far</h2>
+        <p class="section-subtitle">Still early days — but every win counts.</p>
+        <div class="ach-grid" id="achGrid"></div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+    <div class="container">
+        <div class="section-label">References</div>
+        <h2 class="section-title">Words from others</h2>
+        <p class="section-subtitle">What teachers, mentors, and peers have to say about working with me.</p>
+
+        <div class="testi-wrapper reveal">
+            <div class="testi-slider" id="testiSlider"></div>
+            
+            <!-- Slider Dots -->
+            <div class="testi-dots" id="testiDots">
+                <button class="testi-dot active" data-index="0" aria-label="Slide 1"></button>
+                <button class="testi-dot" data-index="1" aria-label="Slide 2"></button>
+                <button class="testi-dot" data-index="2" aria-label="Slide 3"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+        <div class="section-label">Contact</div>
+        <h2 class="section-title">Let's connect</h2>
+        <p class="section-subtitle">Whether it's a project, an idea, or just a hello — I'm always open to a good conversation.</p>
+        <div class="contact-grid">
+            <div class="contact-info reveal">
+                <h3>Find me here</h3>
+                <div class="contact-links">
+                    <a href="tel:9923704480" class="contact-link"><div class="contact-link-icon">📞</div>+91 9923704480</a>
+                    <a href="mailto:tapise.utkarsh@gmail.com" class="contact-link"><div class="contact-link-icon">✉️</div>tapise.utkarsh@gmail.com</a>
+                    <a href="mailto:202501120063@mitaoe.ac.in" class="contact-link"><div class="contact-link-icon">🎓</div>202501120063@mitaoe.ac.in</a>
+                    <a href="https://linkedin.com/in/utkarsh-tapise" target="_blank" rel="noopener" class="contact-link"><div class="contact-link-icon">💼</div>linkedin.com/in/utkarsh-tapise</a>
+                    <a href="https://github.com/Ohmanutkarsh" target="_blank" rel="noopener" class="contact-link"><div class="contact-link-icon">🐙</div>github.com/Ohmanutkarsh</a>
+                </div>
+            </div>
+            <div class="reveal">
+                <form class="contact-form" id="contactForm">
+                    <h3>Send a message</h3>
+                    <!-- WE NEED THE USER TO GET THIS KEY -->
+                    <input type="hidden" name="access_key" value="fd0da72b-3cab-4414-a56d-b6c4a9632ac6">
+                    <div class="form-group"><label for="cname">Your Name</label><input type="text" name="name" id="cname" placeholder="e.g. Rahul Sharma" required/></div>
+                    <div class="form-group"><label for="cemail">Email Address</label><input type="email" name="email" id="cemail" placeholder="e.g. rahul@email.com" required/></div>
+                    <div class="form-group"><label for="cmessage">Message</label><textarea name="message" id="cmessage" placeholder="What's on your mind?" required></textarea></div>
+                    <div class="form-status" id="formStatus">✅ Thanks for reaching out! I'll get back to you soon.</div>
+                    <button type="submit" class="btn btn-primary" style="align-self:flex-start">Send Message →</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#testimonials">References</a>
+        <a href="https://github.com/Ohmanutkarsh" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:tapise.utkarsh@gmail.com">Email</a>
+    </div>
+    <p>Built with passion by <strong>Utkarsh Tapise</strong> &nbsp;·&nbsp; FY CSE (Data Science), MIT AOE</p>
+    <p style="margin-top:.4rem;font-size:.75rem;opacity:.4;">© 2026 Utkarsh Narhari Tapise. All rights reserved.</p>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+    <div class="modal" id="modalBox">
+        <div class="modal-header">
+            <span class="modal-title" id="modalTitle">Certificate</span>
+            <button class="modal-close" onclick="closeModalDirect()">✕</button>
+        </div>
+        <div class="modal-body" id="modalBody"></div>
+    </div>
+</div>
+
+<!-- Scripts -->
+
+<script src="main.js"></script>
+</body>
+</html>
